@@ -6,9 +6,11 @@ body {
 .block1{
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url("/img/fond_bienvenue.jpg");
+    background-image: url("../img/fond_bienvenue.jpg");
     background-size: cover;
     text-align: center;
+    color: white;
+    font-size: 4em;
 }
 .contenue{
     margin-left: 10%;
@@ -51,6 +53,7 @@ header a{
     border-width: 2px;
     padding: 10px;
     background-color: #474747;
+    color: white;
 }
 
 footer{
