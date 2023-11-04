@@ -2,12 +2,13 @@
 
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Trebuchet MS';
     background-color: #474747;
 }
 .block1{
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     background-image: url("../img/fond_bienvenue.jpg");
     background-size: cover;
     text-align: center;
@@ -17,21 +18,33 @@ body {
 .contenue{
     margin-left: 10%;
     margin-right: 10%;
-    height: 2000px;
+    height: auto;
 }
 .sous-contenue {
     float: left;
     width: 1100px;
-    height: 1500px;
-    background-color: black;
-    margin-top: 30px;
+    height: auto;
+    margin-top: 25px;
+}
+.about {
+    height: auto;
+    margin-top: 25px;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+.about h2{
+    text-decoration: underline solid;
+}
+.about div{
+    padding-bottom: 50px;
 }
 .widget-discord {
     margin-left: 70%;
     position: sticky;
     text-align: center;
     padding-top: 25px;
-    top: 110px;
+    top: 99px;
     text-align: right;
     float:inline-end;
 }
@@ -41,7 +54,6 @@ body {
 header{
     width: auto;
     position:sticky;
-    margin-bottom: 15px;
     padding-left: 10%;
     padding-right: 10%;
     background-color: #1b1b1b ;
@@ -55,44 +67,51 @@ nav {
 }
 
 header a{
-    text-decoration: none;
-    color: black;
-    border: black;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 2px;
+    text-decoration: underline solid white;
     padding: 10px;
-    background-color: #474747;
     color: white;
     margin: 15px;
+    font-size: 16pt;
 }
 
 /* FOOTER */
 
 footer{
     width: auto;
-    position: sticky;
     margin-bottom: 15px;
     padding-left: 10%;
     padding-right: 10%;
     background-color: #1b1b1b ;
-    margin: 0;
-    margin-top: 15px;
+    margin: 0 auto;
+    margin-top: 50px;
     color: white;
+    display: flex;
 }
-footer div{
+.contact{
     padding-top: 20px;
     padding-bottom: 50px;
     line-height: 20pt;
+    width: 400px;
+    float: left;
 }
-footer div a{
+.reseaux{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    line-height: 20pt;
+    width: 400px;
+    float: left;
+}
+footer a{
     color: white;
     text-decoration: none;
     font-size: 12pt;
 }
-footer div img{
-    width: 12pt;
-    color: white;
+footer img{
+    width: 15pt;
     vertical-align: middle;
-    padding-right: 20px;
+    padding-right: 15px;
+}
+footer div ul li{
+    list-style: none;
+    margin-left: -40px;
 }
