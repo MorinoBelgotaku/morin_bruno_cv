@@ -20,14 +20,15 @@ body {
 .contenue {
     margin-left: 10%;
     margin-right: 10%;
-    height: auto;
+    height: 1100px;
 }
 
 .sous-contenue {
     float: left;
-    width: 1100px;
+    height: 1100px;
     height: auto;
     margin-top: 25px;
+    display: flex;
 }
 
 .about {
