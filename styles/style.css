@@ -5,6 +5,7 @@ body {
     padding: 0;
     font-family: 'Trebuchet MS';
     background-color: #474747;
+    position: relative;
 }
 
 .block1 {
@@ -25,10 +26,10 @@ body {
 
 .sous-contenue {
     float: left;
-    height: 1100px;
-    height: auto;
-    margin-top: 25px;
-    display: flex;
+    width: 100%;
+    height: 2000px;
+    margin: 50px 0px;
+    /* box-shadow: 0 0 25px 0 black; */
 }
 
 .about {
@@ -45,16 +46,6 @@ body {
 
 .about div {
     padding-bottom: 50px;
-}
-
-.widget-discord {
-    margin-left: 70%;
-    position: sticky;
-    text-align: center;
-    padding-top: 25px;
-    top: 99px;
-    text-align: right;
-    float: inline-end;
 }
 
 /* HEADER */
