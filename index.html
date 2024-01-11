@@ -1,86 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="img\favicon\favicon.ico">
-    <link href="styles/style.css" rel="stylesheet">
-    <link href="styles/discord-copy.css" rel="stylesheet">
-    <meta name="robots" content="noindex">
-    <title>Accueil</title>
+    <title>Mon CV</title>
 </head>
-
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="about.html">A propos</a>
-        </nav>
-    </header>
-    <div class="block1">
-        Bienvenue !
-    </div>
-    <div class="contenue">
-
-        <div class="sous-contenue">
-            <div>
-
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="contact">
-            <h3>Contact</h3>
-            <img src="img/icons/email_blanc.png"><a href="mailto:morinbruno@hotmail.be">morinbruno@hotmail.be</a><br>
-            <img src="img/icons/tel_blanc.png"><a href="tel:+32493990037">+32 493/99.00.37</a>
-        </div>
-        <div class="reseaux">
-            <h3>Réseaux</h3>
-            <img src="img/icons/github_blanc.png"><a href="https://github.com/MorinoBelgotaku/" target="_blank"
-                title="GitHub">MorinoBelgotaku</a><br>
-            <img src="img/icons/discord_blanc.png"><a href="" class="copy-click" data-tooltip-text="Copier"
-                data-tooltip-text-copied="✔ Copié">morino_belgotaku</a>
-            <script>
-                const links = document.querySelectorAll('.copy-click');
-                const cls = {
-                    copied: 'is-copied',
-                    hover: 'is-hovered'
-                };
-
-                const copyToClipboard = str => {
-                    const el = document.createElement('input');
-                    str.dataset.copyString ? el.value = str.dataset.copyString : el.value = str.text;
-                    el.setAttribute('readonly', '');
-                    el.style.position = 'absolute';
-                    el.style.opacity = 0;
-                    document.body.appendChild(el);
-                    el.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(el);
-                };
-                const clickInteraction = e => {
-                    e.preventDefault();
-                    copyToClipboard(e.target);
-                    e.target.classList.add(cls.copied);
-                    setTimeout(() => e.target.classList.remove(cls.copied), 1000);
-                    setTimeout(() => e.target.classList.remove(cls.hover), 700);
-                };
-                Array.from(links).forEach(link => {
-                    link.addEventListener('click', e => clickInteraction(e));
-                    link.addEventListener('keypress', e => {
-                        if (e.keyCode === 13) clickInteraction(e);
-                    });
-                    link.addEventListener('mouseover', e => e.target.classList.add(cls.hover));
-                    link.addEventListener('mouseleave', e => {
-                        if (!e.target.classList.contains(cls.copied)) {
-                            e.target.classList.remove(cls.hover);
-                        }
-                    });
-                });
-            </script>
-        </div>
-    </footer>
+    
 </body>
-
 </html>
