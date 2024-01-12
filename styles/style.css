@@ -42,7 +42,6 @@ nav {
     align-items: end;
     justify-content: space-between;
     height: 100px;
-    width: 400px;
 }
 
 a {
@@ -61,6 +60,11 @@ a {
     border-radius: 0.25em;
     cursor: pointer;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin: 5px;
+}
+
+.btn:hover{
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .btn-fill {
@@ -71,10 +75,6 @@ a {
 .btn-fill:hover {
     background-color: #0069d9;
     border: 1px solid #0069d9;
-}
-
-.btn:hover{
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .btn-dl {
@@ -136,13 +136,13 @@ h1 i {
     margin-top: 50px;
 }
 
-.liens-profil a {
+/* .liens-profil a {
     margin-right: 20px;
 }
 
 .liens-profil a:last-child {
     margin-right: 0;
-}
+} */
 
 .img-moi {
     position: absolute;
