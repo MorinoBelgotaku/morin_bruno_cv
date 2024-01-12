@@ -3,6 +3,7 @@
     scroll-behavior: smooth;
     -webkit-user-select: none;
     user-select: none;
+    -webkit-user-drag: none;
 }
 
 body {
@@ -155,14 +156,6 @@ h1 i {
     margin-top: 50px;
 }
 
-/* .liens-profil a {
-    margin-right: 20px;
-}
-
-.liens-profil a:last-child {
-    margin-right: 0;
-} */
-
 .img-moi {
     position: absolute;
     background-image: url("../img/moi.jpg");
@@ -221,7 +214,7 @@ footer span {
 
 /* Animations */
 
-.bounce:hover {
+.bounce {
     animation: bounce2 2s ease infinite;
   }
   @keyframes bounce2 {
