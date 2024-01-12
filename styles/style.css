@@ -98,6 +98,10 @@ a {
     border: 1px solid #007bff;
 }
 
+.btn-long {
+    width: 10em;
+}
+
 i {
     margin-right: 7px;
 }
