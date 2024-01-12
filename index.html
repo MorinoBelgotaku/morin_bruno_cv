@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a00115304d.js" crossorigin="anonymous"></script>
+    <link href="styles/style.css" rel="stylesheet">
     <title>Mon CV</title>
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <a class="btn btn-outline" href="https://github.com/MorinoBelgotaku" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
+            <a class="btn btn-outline" href="#"><i class="fa-solid fa-envelope"></i>Contact</a>
+            <a class="btn btn-dl" href="docs/CV_Morin_Bruno.pdf" download><i class="fa-solid fa-download"></i>Mon CV</a>
+        </nav>
+        <div class="presentation">
+            <div class="sous-presentation">
+                <h1>Hello !</h1>
+                Mon nom est <span>Morin Bruno</span>.<br>
+                Je suis <span>Développeur</span> !
+            </div>
+            <div class="liens-profil">
+                <a class="btn btn-fill" href="#moi"><i class="fa-solid fa-user"></i>Moi</a>
+                <a class="btn btn-fill" href="#etudes"><i class="fa-solid fa-school"></i>Etudes</a>
+                <a class="btn btn-fill" href="#competences"><i class="fa-solid fa-star"></i>Compétences</a>
+                <a class="btn btn-fill" href="#exp-pro"><i class="fa-solid fa-briefcase"></i>Expérience professionel</a>
+            </div>
+        </div>
+        <img class="img-moi" src="img/moi.jpg">
+    </header>
+    <div class="container">
+        <div class="moi" id="moi">
+
+        </div>
+        <div class="etudes" id="etudes">
+
+        </div>
+        <div class="competences" id="competences">
+
+        </div>
+        <div class="exp-pro" id="exp-pro">
+
+        </div>
+        <a href="#top" class="top" id="top-btn">
+            <i class="fa-solid fa-arrow-up fa-2xl"></i>
+        </a>
+    </div>
+    <footer>
+        <p>
+            Crée par <span>Morin Bruno</span>.
+        </p>
+    </footer>
+    <script>
+        btn_btn = document.getElementById("top-btn");
+
+        var myScrollFunc = function () {
+            var y = window.scrollY;
+            if (y >= 500) {
+                btn_btn.className = "top"
+            } else {
+                btn_btn.className = "top hide"
+            }
+        };
+
+        window.addEventListener("scroll", myScrollFunc);
+    </script>
 </body>
+
 </html>

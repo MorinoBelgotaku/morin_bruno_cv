@@ -1,0 +1,183 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    top: 0;
+}
+
+.top {
+    position: fixed;
+    right: 3em;
+    bottom: 3em;
+    cursor: pointer;
+    transform: scale(2);
+    z-index: 99;
+}
+
+.hide {
+    display: none;
+}
+
+header {
+    display: flex;
+    height: 100vh;
+    background-image: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("../img/header.jpg");
+    background-position: middle;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+nav {
+    position: absolute;
+    right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    height: 100px;
+    width: 400px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* BUTTONS */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 7em;
+    text-align: center;
+    border-radius: 0.25em;
+    cursor: pointer;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-fill {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.btn-fill:hover {
+    background-color: #0069d9;
+    border: 1px solid #0069d9;
+}
+
+.btn:hover{
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-dl {
+    background-color: #007bff;
+    color: white;
+    border-radius: 0.25em;
+    border: 1px solid #007bff;
+    top: 1em;
+}
+
+.btn-dl:hover {
+    background-color: #0069d9;
+    border: 1px solid #0069d9;
+}
+
+.btn-outline {
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.btn-outline:hover {
+    color: white;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.btn i, .btn-fill i {
+    margin-right: 7px;
+}
+/* Présentation */
+
+.presentation {
+    position: absolute;
+    color: white;
+    top: 400px;
+    left: 150px;
+}
+
+.sous-presentation{
+    font-size: xx-large;
+}
+
+.sous-presentation span {
+    color: #007bff;
+}
+
+.liens-profil{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.liens-profil a {
+    margin-right: 20px;
+}
+
+.liens-profil a:last-child {
+    margin-right: 0;
+}
+
+.img-moi {
+    position: absolute;
+    height: 60em;
+    right: 15vh;
+    top: 15vh;
+    clip-path: circle(30% at 50% 43%);
+}
+
+/* Partie moi */
+
+.moi {
+    background-color: #51a5ff;
+    height: 100vh;
+}
+
+/* Partie etudes */
+
+.etudes {
+    background-color: #c33763;
+    height: 100vh;
+}
+
+/* Partie competences */
+
+.competences {
+    background-color: #51a5ff;
+    height: 100vh;
+}
+
+/* Partie Expérience professionel */
+
+.exp-pro {
+    background-color: #c33763;
+    height: 100vh;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #0069d9;
+    color: white;
+}
+
+footer span {
+    color: #c33763;
+    font-weight: bold;
+}
