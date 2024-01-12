@@ -8,6 +8,23 @@ body {
     top: 0;
 }
 
+/* Scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 1.5vh;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #007bff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0069d9;
+}
+
 /* Bouton top */
 .top {
     position: fixed;
@@ -59,12 +76,12 @@ a {
     text-align: center;
     border-radius: 0.25em;
     cursor: pointer;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     margin: 5px;
 }
 
-.btn:hover{
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+.btn:hover {
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .btn-fill {
@@ -118,7 +135,7 @@ i {
     left: 150px;
 }
 
-.presentation{
+.presentation {
     font-size: xx-large;
 }
 
@@ -130,7 +147,7 @@ h1 i {
     margin-right: 15px;
 }
 
-.liens-profil{
+.liens-profil {
     display: flex;
     align-items: center;
     margin-top: 50px;
