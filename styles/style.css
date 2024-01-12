@@ -1,6 +1,8 @@
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     scroll-behavior: smooth;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 body {
@@ -208,7 +210,7 @@ footer {
     justify-content: center;
     align-items: center;
     height: 200px;
-    background-color: #0069d9;
+    background-color: #272424;
     color: white;
 }
 
@@ -216,3 +218,14 @@ footer span {
     color: #c33763;
     font-weight: bold;
 }
+
+/* Animations */
+
+.bounce:hover {
+    animation: bounce2 2s ease infinite;
+  }
+  @keyframes bounce2 {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+      40% {transform: translateY(-30px);}
+      60% {transform: translateY(-15px);}
+  }
