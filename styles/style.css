@@ -8,10 +8,11 @@ body {
     top: 0;
 }
 
+/* Bouton top */
 .top {
     position: fixed;
-    right: 3em;
-    bottom: 3em;
+    right: 5em;
+    bottom: 5em;
     cursor: pointer;
     transform: scale(2);
     z-index: 99;
@@ -20,6 +21,8 @@ body {
 .hide {
     display: none;
 }
+
+/* Header */
 
 header {
     display: flex;
@@ -108,18 +111,18 @@ i {
 
 /* Présentation */
 
-.presentation {
+.profil {
     position: absolute;
     color: white;
     top: 400px;
     left: 150px;
 }
 
-.sous-presentation{
+.presentation{
     font-size: xx-large;
 }
 
-.sous-presentation span {
+.presentation span {
     color: #007bff;
 }
 
@@ -143,9 +146,13 @@ h1 i {
 
 .img-moi {
     position: absolute;
-    height: 60em;
-    right: 15vh;
-    top: 15vh;
+    background-image: url("../img/moi.jpg");
+    background-size: 70%;
+    background-position: center;
+    height: 49em;
+    width: 49em;
+    right: 2vh;
+    bottom: -8vh;
     clip-path: circle(30% at 50% 43%);
 }
 
@@ -176,6 +183,8 @@ h1 i {
     background-color: #c33763;
     height: 100vh;
 }
+
+/* Footer */
 
 footer {
     display: flex;
