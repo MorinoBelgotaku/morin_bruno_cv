@@ -12,7 +12,7 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 1.5vh;
+    width: 1.3vh;
 }
 
 /* Handle */
