@@ -47,7 +47,7 @@ body {
 header {
     display: flex;
     height: 100vh;
-    background-image: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("../img/header.jpg");
+    background-image: linear-gradient(rgba(29, 38, 113, 0.8), rgba(29, 38, 113, 0.8)), url("../img/header.jpg");
     background-position: middle;
     background-repeat: no-repeat;
     background-size: cover;
@@ -79,12 +79,12 @@ a {
     text-align: center;
     border-radius: 0.25em;
     cursor: pointer;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: .15s ease-in-out;
     margin: 5px;
 }
 
 .btn:hover {
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: .15s ease-in-out;
 }
 
 .btn-fill {
@@ -144,6 +144,7 @@ i {
 
 .presentation span {
     color: #007bff;
+    font-weight: bold;
 }
 
 h1 i {
@@ -168,32 +169,53 @@ h1 i {
     clip-path: circle(30% at 50% 43%);
 }
 
+/* Gestion Flex */
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+}
+
+.column-flex {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Partie moi */
 
 .moi {
-    background-color: #51a5ff;
+    background-color: #1d2671;
     height: 100vh;
 }
 
 /* Partie etudes */
 
 .etudes {
-    background-color: #c33763;
+    background-color: #1d2671;
     height: 100vh;
 }
 
 /* Partie competences */
 
 .competences {
-    background-color: #51a5ff;
+    background-color: #1d2671;
     height: 100vh;
 }
 
 /* Partie Expérience professionel */
 
 .exp-pro {
-    background-color: #c33763;
+    background-color: #1d2671;
     height: 100vh;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    margin: 0;
+    padding: 0;
 }
 
 /* Footer */
@@ -216,9 +238,23 @@ footer span {
 
 .bounce {
     animation: bounce 2s ease infinite;
-  }
-  @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-      40% {transform: translateY(-30px);}
-      60% {transform: translateY(-15px);}
-  }
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
