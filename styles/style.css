@@ -4,10 +4,11 @@
     -webkit-user-select: none;
     user-select: none;
     -webkit-user-drag: none;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
     top: 0;
 }
 
@@ -214,8 +215,6 @@ h1 i {
 hr {
     border: none;
     height: 3px;
-    margin: 0;
-    padding: 0;
 }
 
 /* Footer */
