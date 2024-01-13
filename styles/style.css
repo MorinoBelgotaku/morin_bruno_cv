@@ -5,7 +5,6 @@
     user-select: none;
     -webkit-user-drag: none;
     margin: 0;
-    padding: 0;
 }
 
 /* Scroll bar */
@@ -53,12 +52,10 @@ header {
 
 nav {
     position: absolute;
-    right: 50px;
+    margin: 50px 150px;
     display: flex;
     flex-wrap: wrap;
-    align-items: end;
     justify-content: space-between;
-    height: 100px;
 }
 
 a {
@@ -156,14 +153,17 @@ h1 i {
 
 .img-moi {
     position: absolute;
-    background-image: url("../img/moi.jpg");
-    background-size: 70%;
+    background: url("../img/moi.jpg");
+    background-size: 100%;
     background-position: center;
-    height: 49em;
-    width: 49em;
-    right: 2vh;
-    bottom: -8vh;
-    clip-path: circle(30% at 50% 43%);
+    height: 30em;
+    width: 30em;
+    right: 0;
+    bottom: 20vh;
+    border: 5px #007bff solid;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgba(0,0,0,1) inset;
+    margin: 0 150px;;
 }
 
 /* Gestion Flex */
@@ -192,6 +192,11 @@ h1 i {
 .etudes {
     background-color: #1d2671;
     height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: xx-large;
 }
 
 /* Partie competences */
@@ -253,3 +258,11 @@ footer span {
         transform: translateY(-15px);
     }
 }
+
+.pulse {
+    animation: pulse 1s infinite ease-in-out alternate;
+  }
+  @keyframes pulse {
+    from { transform: scale(0.8); }
+    to { transform: scale(1.2); }
+  }
