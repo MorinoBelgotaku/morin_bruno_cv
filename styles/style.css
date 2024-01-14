@@ -31,7 +31,7 @@
     bottom: 5em;
     cursor: pointer;
     transform: scale(2);
-    z-index: 99;
+    z-index: 999;
 }
 
 .hide {
@@ -162,7 +162,6 @@ h1 i {
     width: 30em;
     border: 5px #007bff solid;
     border-radius: 50%;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
 }
 
 /* Gestion Flex */
