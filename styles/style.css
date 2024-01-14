@@ -54,7 +54,6 @@ nav {
     position: absolute;
     margin: 50px 150px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -126,10 +125,12 @@ i {
 /* Présentation */
 
 .profil {
-    position: absolute;
     color: white;
-    top: 400px;
-    left: 150px;
+    margin: 20vh 150px 10vh 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
 }
 
 .presentation {
@@ -152,18 +153,14 @@ h1 i {
 }
 
 .img-moi {
-    position: absolute;
     background: url("../img/moi.jpg");
     background-size: 100%;
     background-position: center;
     height: 30em;
     width: 30em;
-    right: 0;
-    bottom: 20vh;
     border: 5px #007bff solid;
     border-radius: 50%;
-    box-shadow: 1px 1px 10px rgba(0,0,0,1) inset;
-    margin: 0 150px;;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 1) inset;
 }
 
 /* Gestion Flex */
@@ -261,8 +258,14 @@ footer span {
 
 .pulse {
     animation: pulse 1s infinite ease-in-out alternate;
-  }
-  @keyframes pulse {
-    from { transform: scale(0.8); }
-    to { transform: scale(1.2); }
-  }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
