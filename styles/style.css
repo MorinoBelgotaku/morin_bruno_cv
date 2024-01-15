@@ -12,6 +12,7 @@
 /* width */
 ::-webkit-scrollbar {
     width: 1.3vh;
+    background-color: #1d2671;
 }
 
 /* Handle */
