@@ -55,7 +55,7 @@
 
 }
 
-@media only screen and (max-height: 599px) {
+@media only screen and (max-height: 500px) {
     @media (orientation: landscape) {
         body {
             display: none;
