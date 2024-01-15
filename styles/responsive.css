@@ -1,0 +1,53 @@
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+    .profil {
+        flex-direction: column;
+        margin: 0px 15px;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        right: 0;
+        width: auto;
+    }
+
+    nav {
+        display: flex;
+        padding: 0;
+        margin: 15px;
+        position: static;
+        flex-direction: row-reverse;
+    }
+
+    nav .btn {
+        font-size: small;
+    }
+
+    .presentation {
+        font-size: medium;
+    }
+
+    .liens-profil {
+        margin: 20px 0 0 0;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        font-size: x-small;
+    }
+
+
+    .img-moi {
+        height: 15em;
+        width: 15em;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        margin-bottom: 40px;
+    }
+  }
