@@ -4,6 +4,7 @@
     header {
         flex-direction: column;
     }
+
     .profil {
         flex-direction: column;
         margin: 0px 15px;
@@ -50,4 +51,24 @@
     h1 {
         margin-bottom: 40px;
     }
-  }
+
+
+}
+
+@media only screen and (max-height: 600px) {
+    @media (orientation: landscape) {
+        body {
+            display: none;
+        }
+
+        html {
+            background-color: #1d2671;
+            background-image: url(../img/turn_device.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 25%;
+            width: 100vw;
+            height: 100vh;
+        }
+    }
+}
