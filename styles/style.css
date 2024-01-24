@@ -144,7 +144,7 @@ i {
     font-weight: bold;
 }
 
-h1 {
+.presentation h1 {
     margin-right: 15px;
     margin-bottom: 50px;
 }
@@ -186,16 +186,39 @@ h1 {
     height: 100vh;
 }
 
+.moi div {
+    margin: 100px 150px;
+    color: white;
+    position: absolute;
+}
+
+.moi h1 {
+    margin-bottom: 10px;
+}
+
+.moi p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
 /* Partie etudes */
 
 .etudes {
     background-color: #1d2671;
     height: 100vh;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+}
+
+.etudes>div {
+    margin: 100px 150px;
     color: white;
-    font-size: xx-large;
+    position: absolute;
+    width: calc(100vw - 300px);
+}
+
+.etudes>div>div {
+    box-shadow: 0 0 5px black;
+    width: 200px;
+    height: 200px;
 }
 
 /* Partie competences */
@@ -231,6 +254,12 @@ footer {
 footer span {
     color: #c33763;
     font-weight: bold;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* Animations */
